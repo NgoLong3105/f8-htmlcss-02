@@ -1,0 +1,270 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* hỗ trợ in */
+@media print {
+    body {
+        print-color-adjust: exact !important;
+        -webkit-print-color-adjust: exact !important;
+    }
+}
+
+:root { 
+    --gray-text-color:#757575;
+    --gray-color:#999;
+    --text-color:#333;
+    --black-color:#000;
+    --white-color:#fff;
+    --border-color:#dbdbdb;
+    --primary-color:#ee4d2d;
+
+    --header-height: 129px;
+    --navbar-height:34px;
+    --header-with-search-height:calc(var(--header-height) - var(--navbar-height));
+}
+* {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family:'Montserrat',sans-serif;
+}
+body {
+    text-rendering: optimizeSpeed;  
+/*  text-rendering: kết xuất văn bản
+    optimizeSpeed: tối ưu hoá tốc độ - dùng web nhiều hình ảnh video
+    optimizeLegibility: tối ưu hóa Mức độ rõ ràng - dùng web nhiều chữ */
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+/*  font-smoothing: làm mịn phông chữ
+    grayscale: thang độ xám
+    antialiased: khử răng cưa
+     */
+}
+/* padding  */
+.pt-4{padding-top:0.4rem;}.pr-4{padding-right:0.4rem;}.pb-4{padding-left:0.4rem;}.pl-4{padding-bottom:0.4rem;}
+.pt-8{padding-top:0.8rem;}.pr-8{padding-right:0.8rem;}.pb-8{padding-left:0.8rem;}.pl-8{padding-bottom:0.8rem;}
+.pt-16{padding-top:0.1rem;}.pr-16{padding-right:0.1rem;}.pb-16{padding-left:0.1rem;}.pl-16{padding-bottom:0.1rem;}
+.pt-20{padding-top:0.2rem;}.pr-20{padding-right:0.2rem;}.pb-20{padding-left:0.2rem;}.pl-20{padding-bottom:0.2rem;}
+.pt-24{padding-top:0.2rem;}.pr-24{padding-right:0.2rem;}.pb-24{padding-left:0.2rem;}.pl-24{padding-bottom:0.2rem;}
+/* margin */
+.m-0{margin:0rem}
+.mt-0{margin-top:0rem;}.mr-0{margin-right:0rem;}.ml-0{margin-left:0rem;}.mb-0{margin-bottom:0rem;}
+.mt-1{margin-top:0.1rem;}.mr-1{margin-right:0.1rem;}.ml-1{margin-left:0.1rem;}.mb-1{margin-bottom:0.1rem;}
+.mt-2{margin-top:0.2rem;}.mr-2{margin-right:0.2rem;}.ml-2{margin-left:0.2rem;}.mb-2{margin-bottom:0.2rem;}
+.mt-3{margin-top:0.3rem;}.mr-3{margin-right:0.3rem;}.ml-3{margin-left:0.3rem;}.mb-3{margin-bottom:0.3rem;}
+.mt-4{margin-top:0.4rem;}.mr-4{margin-right:0.4rem;}.ml-4{margin-left:0.4rem;}.mb-4{margin-bottom:0.4rem;}
+.mt-6{margin-top:0.6rem;}.mr-6{margin-right:0.6rem;}.ml-6{margin-left:0.6rem;}.mb-6{margin-bottom:0.6rem;}
+.mt-8{margin-top:0.8rem;}.mr-8{margin-right:0.8rem;}.ml-8{margin-left:0.8rem;}.mb-8{margin-bottom:0.8rem;}
+.mt-10{margin-top:1.0rem;}.mr-10{margin-right:1.0rem;}.ml-10{margin-left:1.0rem;}.mb-10{margin-bottom:1.0rem;}
+.mt-12{margin-top:1.2rem;}.mr-12{margin-right:1.2rem;}.ml-12{margin-left:1.2rem;}.mb-12{margin-bottom:1.2rem;}
+.mt-14{margin-top:1.4rem;}.mr-14{margin-right:1.4rem;}.ml-14{margin-left:1.4rem;}.mb-14{margin-bottom:1.4rem;}
+.mt-16{margin-top:1.6rem;}.mr-16{margin-right:1.6rem;}.ml-16{margin-left:1.6rem;}.mb-16{margin-bottom:1.6rem;}
+.mt-18{margin-top:1.8rem;}.mr-18{margin-right:1.8rem;}.ml-18{margin-left:1.8rem;}.mb-18{margin-bottom:1.8rem;}
+.mt-20{margin-top:2.0rem;}.mr-20{margin-right:2.0rem;}.ml-20{margin-left:2.0rem;}.mb-20{margin-bottom:2.0rem;}
+.mt-24{margin-top:2.4rem;}.mr-24{margin-right:2.4rem;}.ml-24{margin-left:2.4rem;}.mb-24{margin-bottom:2.4rem;}
+.mt-24{margin-top:2.8rem;}.mr-28{margin-right:2.8rem;}.ml-28{margin-left:2.8rem;}.mb-28{margin-bottom:2.8rem;}
+.mt-30{margin-top:3.0rem;}.mr-30{margin-right:3.0rem;}.ml-30{margin-left:3.0rem;}.mb-30{margin-bottom:3.0rem;}
+.mt-32{margin-top:3.2rem;}.mr-32{margin-right:3.2rem;}.ml-32{margin-left:3.2rem;}.mb-32{margin-bottom:3.2rem;}
+/* color  */
+.white-color{color:#fff;}
+.black-text{color:#000;}
+.text-color{color:#333;}
+.gray-color{color:#999;}
+.primary-color{color:var(--primary-color);}
+/* background  */
+.background-white{background-color:#fff;}
+.background-primary{background-color: var(--primary-color);}
+/* cursor */
+.cursor__text{cursor:text;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+.cursor__pointer{cursor:pointer;}
+/* ----------------- */
+.text-align__center{text-align:center;}
+/* ----------------- */
+.width_100{width:100%;}
+/* ----------------- */
+.display-flex{display: -webkit-box;display: -ms-flexbox;display: flex;}
+/* ----------------- */
+.fw-700{font-weight:700;}
+/* ----------------- */
+.relative{position: relative;}
+/*--------- phan thuc hanh chung ----------*/
+.triangle::after { 
+    content: ""; 
+    display: block;
+    position: absolute;
+    border-style: solid; 
+    border-width: 11px 14px; 
+    border-color: transparent transparent var(--white-color) transparent; 
+} 
+.triangle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 10%;
+    width: 80%;
+    /* background-color: red; */
+}
+/* ----------------- */
+.border-out {
+    border-radius: 2px;
+    border: 1px solid var(--border-color);
+    background-color: var(--white-color);
+    -webkit-box-shadow: 0 1px 4px 0 rgb(0 0 0 / 26%);
+            box-shadow: 0 1px 4px 0 rgb(0 0 0 / 26%);
+}
+/* ----------------- */
+.three-dot {
+    overflow: hidden;
+    white-space: nowrap;
+}
+.three-dots {
+    display: block;
+    overflow: hidden;
+  	display: -webkit-box;
+  	-o-text-overflow: ellipsis;
+  	   text-overflow: ellipsis;
+  	-webkit-line-clamp: 2; 
+  	-webkit-box-orient: vertical;
+}
+/* ----------------- */
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-animation: faceIn linear .3s;
+            animation: faceIn linear .3s;
+    height: 38px;
+    padding: 0 12px;
+    min-width: 60px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1rem;
+    border-radius: 2px;
+}
+.btn.btn--noral:hover {
+    background-color: rgba(0, 0, 0, 0.07);
+}
+.btn.btn--primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+.btn.btn--while {
+    background-color: var(--white-color);
+}
+.btn.btn-disable {
+    color: #949494;
+    cursor: default;
+    background-color: #c3c3c3;
+}
+/* animation  */
+.animation  {
+    will-change: opacity, transform;
+    animation: growth ease-in 0.2s;
+    -o-animation: growth ease-in 0.2s;
+    -ms-animation: growth ease-in 0.2s;
+    -moz-animation: growth ease-in 0.2s;
+    -webkit-animation: growth ease-in 0.2s;
+    -webkit-transform-origin: calc(100% - 8%) top;
+        -ms-transform-origin: calc(100% - 8%) top;
+            transform-origin: calc(100% - 8%) top;
+}
+@-webkit-keyframes faceIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes faceIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes growth {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+@keyframes growth {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+/* @keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }   
+    to {
+        transform: scale(var(--growth-to));
+    }
+} */
+
+/* modal */
+.modal {
+    position: fixed;
+    inset: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+.modal__body {
+    --growth-from: 0.7;
+    --growth-to: 1;
+    margin: auto;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 3px;
+    background-color: var(--white-color);
+    -webkit-animation: growth linear 0.2s;
+            animation: growth linear 0.2s;
+}
+
+
+
