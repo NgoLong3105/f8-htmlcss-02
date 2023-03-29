@@ -1,8 +1,7 @@
 .grid {
-    width: 1110px;
+    width: 1170px;
     display: block;
     padding: 0;
-				
 }
 .grid.wide {
     max-width: calc(100% - 48px);

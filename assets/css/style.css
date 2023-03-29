@@ -1,0 +1,331 @@
+/* commit */
+@media print {
+    body {
+        print-color-adjust: exact !important;
+        -webkit-print-color-adjust: exact !important;
+    }
+}
+:root {
+    --main-color: #ffb900;
+}
+body {
+    height: 5000px;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-rendering: optimizeSpeed;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+.dfc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dfb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pt200 {
+    padding-top: 200px;
+}
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+.btn {
+    width: 118px;
+    height: 50px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    border-radius: 25px;
+    background: #171100;
+}
+.btn.btn--primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+.btn.btn--while {
+    background-color: var(--white-color);
+}
+.btn.btn-disable {
+    color: #949494;
+    cursor: default;
+    background-color: #c3c3c3;
+}
+
+/* nav */
+.fixed-header {
+    position: sticky;
+    top: -28px;
+    padding-top: 28px;
+    height: 94px;
+    background: #fffcf4;
+    z-index: 10;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    margin: 8px 0;
+}
+.nav img {
+    cursor: pointer;
+    padding: 20px 20px 20px 0;
+}
+.nav .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav .list {
+    display: flex;
+    padding-right: 70px;
+}
+.nav .login {
+    width: 144px;
+    height: 50px;
+    border-radius: 24.5px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+.nav .item {
+    position: relative;
+    padding: 16px;
+    color: #5f5b53;
+}
+.nav .item:hover {
+    cursor: pointer;
+}
+.nav .item + .item {
+    margin-left: 5px;
+}
+.nav .item-bold {
+    color: #171100;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+.nav .item-bold::after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    right: 64%;
+    width: 12px;
+    height: 2px;
+    background: #171100;
+    border-radius: 1px;
+}
+
+/* hero */
+.hero {
+    height: 806px;
+    padding-top: 56px;
+    background: #fffcf4;
+}
+.hero-left {
+    width: 48%;
+    position: relative;
+}
+.hero-left .img {
+    width: 470px;
+    height: 685px;
+    border-radius: 20px;
+    background: cover;
+}
+.hero-left .list {
+    position: absolute;
+    right: calc(16% - 100px);
+    bottom: 48px;
+    width: 270px;
+    min-height: 244px;
+    border-radius: 12px;
+    background: #ffffff;
+    padding: 24px;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+}
+.hero-left .item {
+    height: 56px;
+    display: flex;
+    align-items: center;
+}
+.hero-left .item + .item {
+    margin-top: 14px;
+}
+.hero-left .group {
+    width: 48px;
+    height: 48px;
+    background: #fff9e8;
+    border-radius: 999px;
+}
+.hero-left .text {
+    margin-left: 16px;
+}
+.hero-left .text p {
+    color: #5f5b53;
+    line-height: 1.86;
+}
+.hero-left .text span {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+/* hero right  */
+.hero-right {
+    width: 52%;
+    padding: 64px 0 0 130px;
+}
+.hero-right .heading {
+    width: 470px;
+    color: #171100;
+    font-weight: 700;
+    line-height: 1.17;
+    font-size: 5.8rem;
+    font-family: "Sen";
+    letter-spacing: -0.02em;
+}
+
+.hero-right .desc {
+    margin-top: 22px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+.hero-right .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 64px;
+    margin-top: 32px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    border-radius: 32px;
+    background: #ffb900;
+}
+.hero-right .btn-transparent {
+    width: 200px;
+    color: #171100;
+    margin-left: 4px;
+    background-color: transparent;
+}
+.hero-right img {
+    position: relative;
+    top: 8px;
+}
+.hero-right .parameter {
+    color: #5f5b53;
+    line-height: 1.67;
+    font-size: 1.8rem;
+    margin: 48px 0 8px;
+}
+.hero-right .desc-number {
+    color: #5f5b53;
+    line-height: 1.67;
+    font-size: 1.8rem;
+}
+.hero-right .desc-number strong {
+    font-weight: 700;
+    color: #171100;
+    font-size: 4.4rem;
+    line-height: 1.23;
+}
+
+/* body  */
+.body {
+    background: #e5e5e5;
+}
+.courses {
+}
+.courses-heading {
+    font-family: "Sen";
+    font-weight: 700;
+    color: #171100;
+    line-height: 1.26;
+    font-size: 3.8rem;
+    letter-spacing: -0.02em;
+}
+.courses-info {
+    display: flex;
+    justify-content: space-between;
+}
+.courses-info .courses-btn {
+    border: none;
+    background: transparent;
+}
+.courses-info .courses-btn img {
+    width: 40px;
+    height: 40px;
+}
+.courses-info .courses-btn img:hover {
+    cursor: pointer;
+    border: 1px solid #ffb900;
+}
+.courses-desc {
+    width: 458px;
+    margin-top: 16px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+.courses-forward__list {
+    margin-top: 55px;
+}
+.courses-forward__item {
+    width: 370px;
+    height: 466px;
+}
+.courses-forward__img {
+    display: block;
+    width: 370px;
+    height: 278px;
+    background: cover;
+    border-radius: 12px 12px 0px 0px;
+}
+.courses-forward__info {
+    background: #fff;
+    padding: 16px 22px 22px 22px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+}
+.courses-forward__info .start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: #fea31b;
+}
+.courses-forward__info .start img {
+    position: relative;
+    top: -2px;
+    margin-right: 6px;
+}
+.courses-forward__info-title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+.courses-forward__info-desc {
+    margin-top: 6px;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+.courses-forward__info-btn {
+}
