@@ -293,7 +293,7 @@ a {
 
 /* body  */
 .body {
-    background: #e5e5e5;
+    background: #fff;
 }
 .courses {
     margin: 200px 0 100px;
@@ -348,6 +348,7 @@ a {
 }
 .courses-feedback__info {
     background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
     padding: 16px 22px 22px 22px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -395,7 +396,7 @@ a {
 /* testimonial */
 .testimonial {
     height: 380px;
-    margin: 200px 0 100px;
+    margin: 200px 0 0;
     background: #2e2100;
 }
 .testimonial .info {
@@ -446,8 +447,8 @@ a {
 
 /* features  */
 .contact {
-    margin: 200px 0;
-    background: #e5e5e5;
+    padding: 200px 0;
+    background: #fff;
 }
 .features-info {
     display: flex;
@@ -499,6 +500,7 @@ a {
 
 /* lesson  */
 .lesson {
+    padding-top: 200px;
 }
 .lesson-info {
     display: flex;
