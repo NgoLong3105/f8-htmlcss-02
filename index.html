@@ -18,22 +18,32 @@
 </head>
 
 <body>
-    <header class="fixed-header">
+    <div class="fixed-header">
         <div class="grid wide">
             <div class="nav">
-                <img src="./assets/icon/Lesson..svg" alt="Lesson" class="logo">
+                <a href="#">
+                    <img src="./assets/icon/Lesson..svg" alt="Lesson" class="logo">
+                </a>
                 <div class="menu">
                     <ul class="list">
-                        <li class="item item-bold">Home</li>
-                        <li class="item">Courses</li>
-                        <li class="item">Pricing</li>
-                        <li class="item">Reviews</li>
+                        <a href="#">
+                            <li class="item item-bold">Home</li>
+                        </a>
+                        <a href="#courses">
+                            <li class="item">Courses</li>
+                        </a>
+                        <a href="#reviews">
+                            <li class="item">Reviews</li>
+                        </a>
+                        <a href="#pricing">
+                            <li class="item">Pricing</li>
+                        </a>
                     </ul>
                     <button class="btn login">Sign Up</button>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
 
     <div class="hero">
         <div class="grid wide">
@@ -86,8 +96,8 @@
     <div class="app">
 
         <body class="body">
-            <div class="grid wide">
-                <div class="courses pt200">
+            <div id="courses" class="courses">
+                <div class="grid wide">
                     <h2 class="courses-heading">Our popular courses</h2>
                     <div class="courses-info">
                         <p class="courses-desc">Build new skills with new trendy courses and shine for the next future
@@ -102,36 +112,245 @@
                             </button>
                         </div>
                     </div>
-                    <ul class="courses-forward__list">
-                        <li class="courses-forward__item">
-                            <img class="courses-forward__img" src="./assets/img/tải xuống.jpg" alt="" class="img">
-                            <div class="courses-forward__info">
+                    <div class="courses-feedback__list">
+                        <a href="#!" class="courses-feedback__item">
+                            <img class="courses-feedback__img" src="./assets/img/img1.jpg" alt="">
+                            <div class="courses-feedback__info">
                                 <div class="dfb">
-                                    <h4 class="courses-forward__info-title">Basic web design</h4>
+                                    <h4 class="courses-feedback__info-title">Basic web design</h4>
                                     <div class="start">
                                         <img src="./assets/icon/Star.svg" alt="">
                                         <span>4.5</span>
                                     </div>
                                 </div>
-                                <p class="courses-forward__info-desc">Get the best course, gain knowledge and shine for
+                                <p class="courses-feedback__info-desc two-line-paragraph">Get the best course, gain
+                                    knowledge and shine for
                                     your future
                                     career.</p>
-                                <div class="">
+                                <div class="courses-feedback__info-market mt-12">
                                     <strong>$120.75</strong>
-                                    <button class="courses-forward__info-btn">Book Now</button>
+                                    <button class="btn">Book Now</button>
                                 </div>
 
                             </div>
-                        </li>
+                        </a>
+                        <a href="#!" class="courses-feedback__item">
+                            <img class="courses-feedback__img" src="./assets/img/img2.jpg" alt="">
+                            <div class="courses-feedback__info">
+                                <div class="dfb">
+                                    <h4 class="courses-feedback__info-title">UI/UX design</h4>
+                                    <div class="start">
+                                        <img src="./assets/icon/Star.svg" alt="">
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                                <p class="courses-feedback__info-desc two-line-paragraph">Get the best course, gain
+                                    knowledge and shine for
+                                    your future
+                                    career.</p>
+                                <div class="courses-feedback__info-market mt-12">
+                                    <strong>$120.75</strong>
+                                    <button class="btn btn--black">Book Now</button>
+                                </div>
 
-                    </ul>
+                            </div>
+                        </a>
+                        <a href="#!" class="courses-feedback__item">
+                            <img class="courses-feedback__img" src="./assets/img/img3.jpg" alt="">
+                            <div class="courses-feedback__info">
+                                <div class="dfb">
+                                    <h4 class="courses-feedback__info-title">Web App design</h4>
+                                    <div class="start">
+                                        <img src="./assets/icon/Star.svg" alt="">
+                                        <span>4.5</span>
+                                    </div>
+                                </div>
+                                <p class="courses-feedback__info-desc two-line-paragraph">Get the best course, gain
+                                    knowledge and shine for
+                                    your future
+                                    career.</p>
+                                <div class="courses-feedback__info-market mt-12">
+                                    <strong>$120.75</strong>
+                                    <button class="btn btn--black">Book Now</button>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="testimonial pt200"></div>
-                <div class="features pt200"></div>
-                <div class="lesson pt200"></div>
-                <div class="blog pt200"></div>
+            </div>
+            <div class="testimonial" id="reviews">
+                <div class="grid wide">
+                    <div class="info row no-gutters">
+                        <div class="col">
+                            <img src="./assets/img/avata1.png" alt="" class="avata">
+                            <div class="name">Peter Moor</div>
+                            <span>Student of Web Design</span>
+                            <div class="row no-gutters feedback">
+                                <div class="col icon-feedback"></div>
+                                <div class="col icon-feedback icon-feedback__next"></div>
+                                <div class="col icon-feedback"></div>
+                            </div>
+                        </div>
+
+                        <div class="list col">
+                            <img src="./assets/icon/vecto.svg" alt="" class="icon">
+                            <p class="desc">Not only does my resume look impressive—filled with the names and logos of
+                                world-class institutions—but these certificates also bring me closer to my career goals
+                                by validating the skills I've learned." </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="grid wide">
+                    <div class="features-info">
+                        <div class="features-images">
+                            <img src="./assets/img/featurn1.jpg" alt="Learner outcomes through our awesome platform"
+                                class="features-img features-img--margin">
+                            <img src="./assets/img/featurn2.jpg" alt="Learner outcomes through our awesome platform"
+                                class="features-img">
+                        </div>
+                        <div class="features-text">
+                            <h2 class="features-heading">Learner outcomes through our awesome platform</h2>
+                            <p class="features-desc">87% of people learning for professional development report career
+                                benefits
+                                like getting a promotion, a raise, or starting a new career.</p>
+                            <span class="features-span">Lesson Impact Report (2022)</span>
+                            <button class="features-btn btn">Sign Up</button>
+                        </div>
+                    </div>
+                    <div class="lesson m200-0-100">
+                        <div class="lesson-info">
+                            <div class="lesson-text">
+                                <h2 class="lesson-heading">Take the next step toward your personal and professional
+                                    goals with Lesson.</h2>
+                                <p class="lesson-desc">Take the next step toward. Join now to receive personalized and
+                                    more recommendations from the full Coursera catalog.</p>
+                                <button class="lesson-btn btn">Join Now</button>
+                            </div>
+                            <img src="./assets/img/avata3.jpg"
+                                alt="Take the next step toward your personal and professional goals with Lesson."
+                                class="lesson-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog" id="pricing">
+                <div class="grid wide">
+                    <h2 class="blog-heading">Our blog</h2>
+                    <p class="blog-desc">Read our regular travel blog and know the latest update of tour and travel</p>
+                    <div class="blog-list">
+                        <a href="#!" class="blog-item">
+                            <img src="./assets/img/avata4.jpg"
+                                alt="How to become a pro web designer in 2022 and get remot job?" class="blog-img">
+                            <div class="blog-info">
+                                <div class="blog-info__group">
+                                    <div class="blog-info__icon"></div>
+                                    <div class="blog-info__time">21 November 2021</div>
+                                </div>
+                                <h3 class="blog-info__heading two-line-paragraph">How to become a pro web designer in
+                                    2022 and get remot
+                                    job?</h3>
+                                <button class="blog-info__btn btn">Read More</button>
+                            </div>
+                        </a>
+                        <a href="#!" class="blog-item">
+                            <img src="./assets/img/avata5.jpg"
+                                alt="How to become a pro web designer in 2022 and get remot job?" class="blog-img">
+                            <div class="blog-info">
+                                <div class="blog-info__group">
+                                    <div class="blog-info__icon"></div>
+                                    <div class="blog-info__time">21 November 2021</div>
+                                </div>
+                                <h3 class="blog-info__heading two-line-paragraph">How to become a pro web designer in
+                                    2022 and get remot
+                                    job?</h3>
+                                <button class="blog-info__btn btn">Read More</button>
+                            </div>
+                        </a>
+                        <a href="#!" class="blog-item">
+                            <img src="./assets/img/avata6.jpg"
+                                alt="How to become a pro web designer in 2022 and get remot job?" class="blog-img">
+                            <div class="blog-info">
+                                <div class="blog-info__group">
+                                    <div class="blog-info__icon"></div>
+                                    <div class="blog-info__time">21 November 2021</div>
+                                </div>
+                                <h3 class="blog-info__heading two-line-paragraph">How to become a pro web designer in
+                                    2022 and get remot
+                                    job?</h3>
+                                <button class="blog-info__btn btn">Read More</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="blog-feedback feedback">
+                        <div class="icon-feedback"></div>
+                        <div class="icon-feedback icon-feedback__next"></div>
+                        <div class="icon-feedback"></div>
+                    </div>
+                </div>
             </div>
         </body>
+    </div>
+
+    <div class="footer">
+        <div class="grid wide">
+            <div class="footer-list">
+                <div class="footer-item footer-group">
+                    <a href="#">
+                        <img src="./assets/icon/logo.svg" alt="Lesson." class="footer-logo">
+                    </a>
+                    <p class="footer-desc">Need to help for your dream Career? trust us. With Lesson, study becomes a
+                        lot
+                        easier with us.</p>
+                    <div class="footer-list__icon">
+                        <a href="#!">
+                            <img src="./assets/icon/Twitter.svg" alt="" class="footer-item__icon">
+                        </a>
+                        <a href="#!">
+                            <img src="./assets/icon/Facebook.svg" alt="" class="footer-item__icon">
+                        </a>
+                        <a href="#!">
+                            <img src="./assets/icon/Linkedin.svg" alt="" class="footer-item__icon">
+                        </a>
+                        <a href="#!">
+                            <img src="./assets/icon/Instagram.svg" alt="" class="footer-item__icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <div class="footer-heading">Company</div>
+                    <div class="footer-info">
+                        <a href="#!" class="footer-desc">About Us</a>
+                        <a href="#!" class="footer-desc">Features</a>
+                        <a href="#!" class="footer-desc">Our Pricing</a>
+                        <a href="#!" class="footer-desc">Latest News</a>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <div class="footer-heading">Support</div>
+                    <div class="footer-info">
+                        <a href="#!" class="footer-desc">FAQ’s</a>
+                        <a href="#!" class="footer-desc">Terms & Conditions</a>
+                        <a href="#!" class="footer-desc">Privacy Policy</a>
+                        <a href="#!" class="footer-desc">Contact Us</a>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <div class="footer-heading">Address</div>
+                    <div style="width: 231px; height: 199px;" class="footer-info">
+                        <div class="footer-desc"><strong>Location:</strong> 27 Division St, New York, NY 10002, USA
+                        </div>
+                        <div class="footer-desc"><strong>Email:</strong> email@gmail.com</div>
+                        <div class="footer-desc"><strong>Phone:</strong> + 000 1234 567 890</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-shape"></div>
+            <div class="footer-copyright">Copyright ©2022 webdesign.gdn All rights reserved</div>
+        </div>
     </div>
 </body>
 
